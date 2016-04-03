@@ -50,9 +50,9 @@ public class ChessAdapter extends BaseAdapter {
         ImageView piece = (ImageView) v.findViewById(R.id.piece);
 
         if (list_pieces.get(position).isBlack()) {
-            background.setBackgroundColor(ContextCompat.getColor(context,android.R.color.white));
-        } else {
             background.setBackgroundColor(ContextCompat.getColor(context,R.color.grey));
+        } else {
+            background.setBackgroundColor(ContextCompat.getColor(context,android.R.color.white));
         }
 
         piece.setImageResource(list_pieces.get(position).getImageResouce());
