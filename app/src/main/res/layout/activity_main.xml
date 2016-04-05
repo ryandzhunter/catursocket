@@ -8,15 +8,17 @@
     >
 
     <GridView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
         android:id="@+id/chessboard"
         android:numColumns="8"
-        android:horizontalSpacing="3dp"
-        android:verticalSpacing="3dp"
+        android:horizontalSpacing="0dp"
+        android:verticalSpacing="0dp"
         android:layout_centerInParent="true"
-        >
+        android:adjustViewBounds="true"
+        android:stretchMode="columnWidth"
+        android:gravity="center"
 
-    </GridView>
+        />
 
 </RelativeLayout>
